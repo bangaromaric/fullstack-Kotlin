@@ -23,9 +23,9 @@ kotlin {
                 cssSupport.enabled = true
                 outputFileName = "kotlin.js"
             }
-            distribution {
-                directory = File("/home/banga/dev/springboot/commande/src/main/resources/static/js/")
-            }
+//            distribution {
+//                directory = File("/home/banga/dev/springboot/commande/src/main/resources/static/js/")
+//            }
         }
     }
 }
