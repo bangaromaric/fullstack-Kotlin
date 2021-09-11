@@ -1,5 +1,8 @@
 package entites
 
+import utils.IMG_LBV_LIST
+import kotlin.random.Random
+
 
 data class Client(
 
@@ -7,7 +10,7 @@ data class Client(
      var nom: String = "",
      var adresse: String = "",
      var mail: String = "",
-     var matriculeFinance : String ="asdsdff"
+     var matriculeFinance : String ="asdsdff",
 )  {
 
 }
