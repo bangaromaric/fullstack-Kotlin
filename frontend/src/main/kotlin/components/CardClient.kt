@@ -13,7 +13,7 @@ import org.w3c.dom.Node
 fun buildClient(client: List<Client>){
     document.getElementById("root")?.append{
         div {
-            +"Hello from JS Romaric ${client.size}"
+            +"Hello from JS ARomaric ${client.size}"
             ol {
                 for (p in client) {
                     li {
