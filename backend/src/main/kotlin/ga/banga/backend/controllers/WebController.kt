@@ -36,6 +36,11 @@ class WebController {
         return "client/societe"
     }
 
+        @GetMapping("/clients")
+        fun getClients(model: Model): String {
+            return "client/clients"
+        }
+
     @GetMapping("/produit")
     fun getProduits(model: Model): String {
         val result: Collection<Produit> = metier.findAllProduits()

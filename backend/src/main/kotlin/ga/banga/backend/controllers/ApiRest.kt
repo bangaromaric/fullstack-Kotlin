@@ -19,6 +19,7 @@ class ApiRest {
     @GetMapping("clients")
     @CrossOrigin(origins = ["http://localhost:8080"])
     fun findClients() : Collection<Client>{
+        Thread.sleep(3000)
         val result: Collection<Client> = metier.findAllClients()
         return result.ifEmpty {
             throw ResponseStatusException(

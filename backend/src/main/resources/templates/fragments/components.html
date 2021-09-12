@@ -25,7 +25,7 @@
             <li th:classappend="${#request.getServletPath() == '/societe' ? 'active' : ''}" ><a  th:href="@{societe}">Societés</a></li>
             <li th:classappend="${#request.getServletPath() == '/produit' ? 'active' : ''}" ><a  th:href="@{produit}">Produits</a></li>
             <li th:classappend="${#request.getServletPath() == '/commandes' ? 'active' : ''}" ><a th:href="@{commandes}">Commandes</a></li>
-            <li ><a href="#">Clients</a></li>
+            <li th:classappend="${#request.getServletPath() == '/clients' ? 'active' : ''}"><a th:href="@{clients}">Clients</a></li>
         </ul>
     </div>
 </nav>
@@ -97,6 +97,13 @@
         }
     </script>
 </div>
+
+<div th:fragment="kotlinJs" th:remove="tag">
+
+    <script th:src="@{js/kotlin.js}" ></script>
+
+</div>
+
 
 </body>
 </html>

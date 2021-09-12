@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
+      th:replace="fragments/layout :: layout(~{::section})">
+
+<body>
+
+
+<section>
+    <div id="loader" class="container ">
+        <div class="row valign-wrapper">
+            <div class="col s6 ">
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-red-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="root" class="container"></div>
+    <div th:replace="fragments/components :: kotlinJs"></div>
+</section>
+
+
+
+</body>
+</html>
