@@ -14,13 +14,13 @@ fun buildClient(clients: List<Client>) {
         div(classes = "row") {
             for (cli in clients) {
                 val img = IMG_LBV_LIST[Random.nextInt(IMG_LBV_LIST.size)]
-                div(classes = "col s12 m8 offset-m2 l6 offset-l3") {
-                    div(classes = "card-panel grey lighten-5 z-depth-1") {
+                div(classes = "col s12 m8 offset-m2 l6 offset-l3 ") {
+                    div(classes = "card-panel grey lighten-5 z-depth-1 ") {
                         div(classes = "row valign-wrapper") {
-                            div(classes = "col s6") {
+                            div(classes = "col s3") {
                                 img(src= img, alt="" ,classes= "circle responsive-img")
                             }
-                            div(classes = "col s6") {
+                            div(classes = "col s9") {
                                 span(classes = "black-text") {
                                     strong {
                                         +"${cli.nom}"

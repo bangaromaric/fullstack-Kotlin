@@ -24,6 +24,7 @@ class ClientPage(private val presenter: ClientContract.Presenter) : ClientContra
     }
     override fun hideLoader() {
         loader.style.visibility = "hidden"
+        loader.style.display = "none"
     }
 }
 
